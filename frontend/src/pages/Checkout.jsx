@@ -36,7 +36,7 @@ const Checkout = () => {
       const orderData = await orderRes.json();
 
       // ✅ CHANGE 1 — read key from .env
-      const razorpayKey = process.env.REACT_APP_RAZORPAY_KEY_ID;
+      const razorpayKey = "";
 
       // ✅ CHANGE 2 — check if key is dummy BEFORE opening Razorpay
       if (!razorpayKey || razorpayKey === 'rzp_test_dummykey123') {
