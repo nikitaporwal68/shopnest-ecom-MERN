@@ -4,11 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "install": "cd Backend && npm install && cd ../frontend && npm install",
+     "install": "cd Backend && npm install && cd ../frontend && npm install",
     "dev:server": "cd Backend && npm start",
     "dev:client": "cd frontend && npm start",
     "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
-    "build": "cd frontend && npm run build"
+    "build": "cd frontend && npm run build",
+    "render-build": "npm run install && npm run build",
+    "start": "cd Backend && node index.js"
   },
   "keywords": [],
   "author": "",

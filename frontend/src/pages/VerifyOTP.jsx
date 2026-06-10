@@ -2,8 +2,7 @@ import { useState } from "react";
 import { useNavigate, useSearchParams } from "react-router";
 import { useContext } from "react";
 import { AuthContext } from "../context/AuthContext";
-// import "../styles/auth.css";
-import '../styles/new.css';
+import "../styles/auth.css";
 
 const VerifyOTP = () => {
     const [otp, setOtp] = useState('');
